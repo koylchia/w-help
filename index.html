@@ -1,1 +1,20 @@
-Code
+Reece Gammicchia's Portfolio 
+(DSC 402)
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "What percent of stores keep emergency contraception stocked for purchase?",
+  "data": {
+    "values": [
+      {"Is Emergency Contraception Stocked?": Yes, "value": 91},
+      {"Is Emergency Contraception Stocked?": No, "value": 9},
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative"},
+    "color": {"field": "category", "type": "nominal"}
+  }
+}
+
+
